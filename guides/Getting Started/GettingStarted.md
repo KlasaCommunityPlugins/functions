@@ -1,3 +1,5 @@
+# Getting Started
+
 ## Installing Functions
 
 > This requires Klasa Master and Discord.js Master
@@ -28,7 +30,6 @@ Client.use(require('klasa-functions'));
 
 and then you can continue your bot as normal.
 
-
-## Further Reading:
+## Further Reading
 
 - {@tutorial CreatingFunctions}

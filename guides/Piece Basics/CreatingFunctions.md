@@ -1,3 +1,3 @@
-## Creating Functions
+# Creating Functions
 
 placeholder

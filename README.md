@@ -1,4 +1,5 @@
 # klasa-functions
+
 A Klasa Plugin which adds Functions Store to your Klasa Bot
 
 ## How To Use
@@ -25,7 +26,7 @@ const { Function } = require("klasa-functions");
 
 module.exports = class extends Function {
 
-    run(){
+    run() {
         // Your Code Here
     }
 
