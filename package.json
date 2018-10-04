@@ -20,7 +20,7 @@
   "scripts": {
     "docs": "npx dg --source src --custom guides/.docconfig.json --output docs/docs.json --logging",
     "lint": "npx eslint --fix src && npx eslint --fix --config .eslintrcmd.json --ext md guides && npx tslint --fix 'typings/*.ts'",
-    "test": "npx eslint src && npx tslint 'typings/*.ts' && npx eslint --config .eslintrc.json --ext md guides && npx markdownlint guides README.md"
+    "test": "npx eslint src && npx tslint 'typings/*.ts' && npx eslint --config .eslintrcmd.json --ext md guides && npx markdownlint guides README.md"
   },
   "devDependencies": {
     "@types/node": "^10.5.8",
