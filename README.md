@@ -6,7 +6,7 @@ A Klasa Plugin which adds Functions Store to your Klasa Bot
 1. Install the plugin.
 
 ```bash
-npm i KlasaCommunityPlugins/klasa-functions
+npm i KlasaCommunityPlugins/functions
 ```
 
 2. Use `klasa-functions` in your client.
