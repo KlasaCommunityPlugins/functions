@@ -35,6 +35,6 @@ declare module 'klasa-functions' {
 		enabled?: boolean,
 		returnRun?: boolean,
 		prefix?: string
-	}
+	};
 
 }
