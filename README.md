@@ -14,7 +14,7 @@ npm i KlasaCommunityPlugins/functions
 
 ```js
 const { Client } = require("klasa");
-Client.use(require("klasa-functions");
+Client.use(require("klasa-functions"));
 
 new Client({ aliasFunctions: { returnRun: true, prefix: "funcs", enabled: true } }).login("Your Beautiful Token");
 ```
