@@ -1,13 +1,17 @@
-[{
+[
+	{
 		"name": "Getting Started",
-		"files": [{
-			"name": "Getting Started",
-			"path": "GettingStarted.md"
-		}]
+		"files": [
+			{
+				"name": "Getting Started",
+				"path": "GettingStarted.md"
+			}
+		]
 	},
 	{
 		"name": "Piece Basics",
-		"files": [{
+		"files": [
+			{
 				"name": "Creating Raw Events",
 				"path": "CreatingRawEvents.md"
 			}

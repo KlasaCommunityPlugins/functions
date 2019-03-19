@@ -1,12 +1,12 @@
-exports.OPTIONS = {
+export const OPTIONS = {
 	aliasFunctions: {
 		enabled: false,
+		prefix: 'functions',
 		returnRun: false,
-		prefix: 'funcs'
 	},
 	pieceDefaults: {
 		functions: {
-			enabled: true
-		}
-	}
+			enabled: true,
+		},
+	},
 };

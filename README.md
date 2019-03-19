@@ -1,46 +1,58 @@
-# klasa-functions
+# Functions
 
-A Klasa Plugin which adds Functions Store to your Klasa Bot
+A simple Klasa plugin which adds reloadable functions to your Klasa Bot
 
 ## How To Use
 
 1. Install the plugin.
 
 ```bash
-npm i KlasaCommunityPlugins/functions
+npm i @kcp/functions
+
+# If you use yarn
+yarn add @kcp/functions
 ```
 
-2. Use `klasa-functions` in your client.
+1. Use `@kcp/functions` in your client.
 
 ```js
 const { Client } = require("klasa");
-Client.use(require("klasa-functions"));
+Client.use(require("@kcp/functions"));
 
 new Client({ aliasFunctions: { returnRun: true, prefix: "funcs", enabled: true } }).login("Your Beautiful Token");
 ```
 
-3. Create a new `function` in your `functions` folder with the name you want to access later, for example `test.js`.
+If you use TypeScript
+
+```ts
+import { Client } from 'klasa';
+import { Client as FunctionsClient } from '@kcp/functions';
+
+Client.use(FunctionsClient);
+
+new Client({ aliasFunctions: { returnRun: true, prefix: "funcs", enabled: true } }).login("Your Beautiful Token");
+```
+
+1. Create a new `function` in your `functions` folder with the name you want to access later, for example `test.js` or `test.ts`.
 
 ```js
-const { Function } = require("klasa-functions");
+const { Function } = require("@kcp/functions");
 
 module.exports = class extends Function {
-
     run() {
         // Your Code Here
     }
-
 }
 ```
 
-4. Use these functions in your bot.
+1. Use these functions in your bot.
 
 ```js
 this.client.funcs.test();
 ```
 
-5. Done!
+1. ???... Enjoy!
 
 ## License
 
-MIT
+This project is under the [MIT](https://github.com/KlasaCommunityPlugins/functions/blob/master/LICENSE) license.
