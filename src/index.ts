@@ -1,11 +1,11 @@
-const { Client: { plugin } } = require('klasa');
+import { Client as KlasaClient } from 'klasa';
 
-module.exports = {
-	Client: require('./lib/Client.js'),
-	Function: require('./lib/structures/Function'),
-	FunctinStore: require('./lib/structures/FunctionStore'),
-	[plugin]: require('./lib/Client')[plugin]
-};
+import { FunctionsClient as Client } from './lib/Client';
+export { Client };
+export { Function } from './lib/structures/Function';
+export { FunctionStore } from './lib/structures/FunctionStore';
+// @ts-ignore
+exports[KlasaClient.plugin] = (Client)[KlasaClient.plugin];
 
 /**
  * @external KlasaClient

@@ -1,10 +1,21 @@
 const { Client } = require('klasa');
-const { token } = require('./config');
+const plugin = require('../../dist/index');
 
-Client.use(require('../../src/index.js').Client);
+console.log(plugin);
 
-const client = new Client({ aliasFunctions: { returnRun: true, enabled: true } });
+Client.use(plugin);
 
-// client.on(REQUEST, args => console.log(args));
+const client = new Client({
+	aliasFunctions: {
+		enabled: true,
+		prefix: 'wow',
+		returnRun: false,
+	},
+	createPiecesFolders: false,
+});
 
-client.login(token);
+client.once('ready', () => {
+	client.console.log(client.functions);
+})
+
+client.login('');
