@@ -1,13 +1,16 @@
 [{
 		"name": "Getting Started",
-		"files": [{
+		"files": [
+			{
 			"name": "Getting Started",
 			"path": "GettingStarted.md"
-		}]
+		}
+	]
 	},
 	{
 		"name": "Piece Basics",
-		"files": [{
+		"files": [
+			{
 				"name": "Creating Raw Events",
 				"path": "CreatingRawEvents.md"
 			}

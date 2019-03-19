@@ -1,38 +1,38 @@
 {
-  "name": "klasa-functions",
-  "author": "QuantumlyTangled",
-  "description": "A basic plugin which adds a functions store to klasa",
-  "license": "MIT",
-  "homepage": "https://github.com/KlasaCommunityPlugins/functions#readme",
+  "name": "@kcp/functions",
+  "version": "1.0.0",
+  "description": "A basic plugin which adds reloadable functions to Klasa",
+  "homepage": "https://github.com/KlasaCommunityPlugins/functions",
   "bugs": {
     "url": "https://github.com/KlasaCommunityPlugins/functions/issues"
   },
-  "main": "src/index.js",
-  "version": "0.0.1",
-  "peerDependencies": {
-    "discord.js": "github:discordjs/discord.js",
-    "klasa": "github:dirigeants/klasa"
-  },
+  "license": "MIT",
+  "author": "KlasaCommunityPlugins",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KlasaCommunityPlugins/functions.git"
   },
   "scripts": {
-    "docs": "npx dg --source src --custom guides/.docconfig.json --output docs/docs.json --logging",
-    "lint": "npx eslint --fix src && npx eslint --fix --config .eslintrcmd.json --ext md guides && npx tslint --fix 'typings/*.ts'",
-    "test": "npx eslint src && npx tslint 'typings/*.ts' && npx eslint --config .eslintrcmd.json --ext md guides && npx markdownlint guides README.md"
+    "test:lint": "npx tslint 'dist/*.ts' && npx eslint --config .eslintrcmd.json --ext md guides && npx markdownlint guides README.md",
+    "docs": "npx dg --source src --custom guides/.docconfig.json --output guides/docs.json --logging"
+  },
+  "peerDependencies": {
+    "discord.js": "github:discordjs/discord.js",
+    "klasa": "github:dirigeants/klasa"
   },
   "devDependencies": {
-    "@types/node": "^10.5.8",
+    "@types/node": "^11.11.3",
     "docgen": "github:dirigeants/docsgen",
     "eslint": "^5.3.0",
     "eslint-config-klasa": "github:dirigeants/klasa-lint",
     "eslint-plugin-markdown": "^1.0.0-beta.6",
-    "markdownlint-cli": "^0.13.0",
-    "tslint": "^5.11.0",
-    "typescript": "^3.0.1"
+    "markdownlint-cli": "^0.14.0",
+    "tslint": "^5.14.0",
+    "typescript": "^3.3.3333"
   },
   "engines": {
-    "node": ">=10.0.0"
+    "node": ">=10.1.0"
   }
 }
