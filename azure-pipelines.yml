@@ -8,23 +8,9 @@ resources:
 jobs:
   - template: lint.yml@templates
 
-  - job: 'Build'
-    pool:
-      vmImage: 'ubuntu-16.04'
-    steps:
-      - task: NodeTool@0
-        input:
-          versionSpec: ${{ parameters.versionSpec }}
-        displayName: 'Install Node.js'
-      - script: 'yarn && npm i --no-save typescript@latest'
-        displayName: 'Install Dependencies'
-      - script: tsc
-        displayName: 'Compiling TS Code'
-    dependsOn: Lint
-
   - template: docs.yml@templates
     parameters:
       ghRef: 'github.com/KlasaCommunityPlugins/functions'
       targetBranch: 'docs'
       sync: 'false'
-      dependsOn: Lint, Build
+      dependsOn: Lint
