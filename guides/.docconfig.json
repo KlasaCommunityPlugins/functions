@@ -1,11 +1,12 @@
-[{
+[
+	{
 		"name": "Getting Started",
 		"files": [
 			{
-			"name": "Getting Started",
-			"path": "GettingStarted.md"
-		}
-	]
+				"name": "Getting Started",
+				"path": "GettingStarted.md"
+			}
+		]
 	},
 	{
 		"name": "Piece Basics",
