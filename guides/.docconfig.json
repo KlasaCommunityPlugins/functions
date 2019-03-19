@@ -12,8 +12,8 @@
 		"name": "Piece Basics",
 		"files": [
 			{
-				"name": "Creating Raw Events",
-				"path": "CreatingRawEvents.md"
+				"name": "Creating Functions",
+				"path": "CreatingFunctions.md"
 			}
 		]
 	}
