@@ -1,4 +1,4 @@
-# Functions
+# Functions [![Build Status](https://dev.azure.com/vladfrangu/KlasaCommunityPlugins/_apis/build/status/Functions?branchName=master)](https://dev.azure.com/vladfrangu/KlasaCommunityPlugins/_build/latest?definitionId=4&branchName=master)
 
 A simple Klasa plugin which adds reloadable functions to your Klasa Bot
 
