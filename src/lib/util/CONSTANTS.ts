@@ -3,7 +3,7 @@ export const OPTIONS = {
 	aliasFunctions: {
 		enabled: false,
 		prefix: 'functions',
-		returnMethod: null,
+		returnMethod: '',
 	},
 	pieceDefaults: {
 		functions: {

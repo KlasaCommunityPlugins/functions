@@ -19,7 +19,7 @@ export class FunctionsClient extends Client {
 	/**
 	 * @typedef {Object} AliasFunctionsOptions
 	 * @property {boolean} [enabled=false]
-	 * @property {string|null} [returnMethod=null]
+	 * @property {string} [returnMethod=""]
 	 * @property {string} [prefix="functions"]
 	 */
 
@@ -80,7 +80,7 @@ declare module 'klasa' {
 	interface KlasaClientOptions {
 		aliasFunctions: {
 			enabled: boolean;
-			returnMethod: null | string;
+			returnMethod: string;
 			prefix: string;
 		};
 	}
