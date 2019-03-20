@@ -19,7 +19,7 @@ export class FunctionsClient extends Client {
 	/**
 	 * @typedef {Object} AliasFunctionsOptions
 	 * @property {boolean} [enabled=false]
-	 * @property {boolean} [returnRun=false]
+	 * @property {string} [returnMethod=""]
 	 * @property {string} [prefix="functions"]
 	 */
 
@@ -55,6 +55,7 @@ export class FunctionsClient extends Client {
 		typedThis.registerStore(typedThis.functions);
 
 		const { options } = typedThis;
+		const { returnMethod } = options.aliasFunctions;
 
 		if (options.aliasFunctions.enabled) {
 			// @ts-ignore
@@ -62,8 +63,8 @@ export class FunctionsClient extends Client {
 				get(target, prop) {
 					if (prop === Symbol.iterator) return target[Symbol.iterator].bind(target);
 					return target.has(prop as string)
-						? options.aliasFunctions.returnRun
-							? target.get(prop as string).run
+						? returnMethod
+							? target.get(prop as string)[returnMethod]
 							: target.get(prop as string)
 						: prop in target
 							// @ts-ignore
@@ -79,7 +80,7 @@ declare module 'klasa' {
 	interface KlasaClientOptions {
 		aliasFunctions: {
 			enabled: boolean;
-			returnRun: boolean;
+			returnMethod: string;
 			prefix: string;
 		};
 	}

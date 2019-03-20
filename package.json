@@ -8,6 +8,9 @@
   },
   "license": "MIT",
   "author": "KlasaCommunityPlugins",
+  "contributors": [
+    "QuantumlyTangled"
+  ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": {

@@ -19,7 +19,7 @@ yarn add @kcp/functions
 const { Client } = require("klasa");
 Client.use(require("@kcp/functions"));
 
-new Client({ aliasFunctions: { returnRun: true, prefix: "funcs", enabled: true } }).login("Your Beautiful Token");
+new Client({ aliasFunctions: { returnMethod: "run", prefix: "funcs", enabled: true } }).login("Your Beautiful Token");
 ```
 
 If you use TypeScript
@@ -30,7 +30,7 @@ import { Client as FunctionsClient } from '@kcp/functions';
 
 Client.use(FunctionsClient);
 
-new Client({ aliasFunctions: { returnRun: true, prefix: "funcs", enabled: true } }).login("Your Beautiful Token");
+new Client({ aliasFunctions: { returnMethod: "run", prefix: "funcs", enabled: true } }).login("Your Beautiful Token");
 ```
 
 1. Create a new `function` in your `functions` folder with the name you want to access later, for example `test.js` or `test.ts`.
