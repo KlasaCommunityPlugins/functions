@@ -5,7 +5,7 @@ export { Client };
 export { Function } from './lib/structures/Function';
 export { FunctionStore } from './lib/structures/FunctionStore';
 // @ts-ignore
-exports[KlasaClient.plugin] = (Client)[KlasaClient.plugin];
+exports[KlasaClient.plugin] = Client[KlasaClient.plugin];
 
 /**
  * @external KlasaClient
