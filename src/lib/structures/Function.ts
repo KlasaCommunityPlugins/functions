@@ -9,6 +9,5 @@ import { Piece } from 'klasa';
  */
 export class Function extends Piece {
 	run(): any {
-		throw new Error(`${this.type}::${this.name}: Run method was not overwritten!`);
 	}
 }
