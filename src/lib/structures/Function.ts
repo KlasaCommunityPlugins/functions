@@ -8,6 +8,5 @@ import { Piece } from 'klasa';
  * @extends external:Piece
  */
 export class Function extends Piece {
-	run(): any {
-	}
+	[K: string]: any;
 }

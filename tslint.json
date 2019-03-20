@@ -2,6 +2,7 @@
 	"extends": "@kcp/lint",
 	"rules": {
 		"file-name-casing": false,
-		"curly": false
+		"curly": false,
+		"no-redundant-jsdoc": false
 	}
 }
