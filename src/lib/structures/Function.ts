@@ -1,3 +1,4 @@
+// Copyright (c) 2018-2019 KlasaCommunityPlugins. All rights reserved. MIT license.
 import { Piece } from 'klasa';
 
 /**

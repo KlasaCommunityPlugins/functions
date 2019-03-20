@@ -1,3 +1,4 @@
+// Copyright (c) 2018-2019 KlasaCommunityPlugins. All rights reserved. MIT license.
 import { Client as KlasaClient } from 'klasa';
 
 import { FunctionsClient as Client } from './lib/Client';
