@@ -21,7 +21,7 @@
     "test:lint": "npm run test:build && npx tslint 'src/*.ts' && npx eslint --config .eslintrcmd.json --ext md guides && npx markdownlint guides README.md",
     "test:build": "npm run test:deps && npx tsc",
     "test:deps": "yarn add discordjs/discord.js dirigeants/klasa",
-    "docs": "yarn add discordjs/discord.js dirigeants/klasa && npx tsc && npx dg --source dist --custom guides/.docconfig.json --output dist/docs.json --logging"
+    "docs": "npm run test:build && npx dg --source dist --custom guides/.docconfig.json --output dist/docs.json --logging"
   },
   "peerDependencies": {
     "discord.js": "github:discordjs/discord.js",
