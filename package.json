@@ -18,8 +18,9 @@
     "url": "git+https://github.com/KlasaCommunityPlugins/functions.git"
   },
   "scripts": {
-    "test:lint": "npx tslint 'src/*.ts' && npx eslint --config .eslintrcmd.json --ext md guides && npx markdownlint guides README.md",
-    "docs": "yarn add discordjs/discord.js dirigeants/klasa && npx tsc && npx dg --source dist --custom guides/.docconfig.json --output dist/docs.json --logging"
+    "test:lint": "yarn tslint 'src/*.ts' && yarn eslint --config .eslintrcmd.json --ext md guides && yarn markdownlint guides README.md",
+    "build": "yarn add discordjs/discord.js dirigeants/klasa && yarn tsc",
+    "docs": "yarn build && yarn dg --source dist --custom guides/.docconfig.json --output dist/docs.json --logging"
   },
   "peerDependencies": {
     "discord.js": "github:discordjs/discord.js",
