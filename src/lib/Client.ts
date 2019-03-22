@@ -31,7 +31,7 @@ export class FunctionsClient extends Client {
 	/**
 	 * Constructs the functions client.
 	 * @since 0.0.1
-	 * @param {FunctionsClientOptions} config The config to pass to the new client
+	 * @param {FunctionsClientOptions} [config] The config to pass to the new client
 	 */
 	constructor(options?: KlasaClientOptions) {
 		super(options);
