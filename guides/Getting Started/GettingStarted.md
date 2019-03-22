@@ -9,7 +9,7 @@ To get the functionality of the plugin you will need to first install it and the
 > I assume you know how to open a command prompt in a folder where you want to install this. Please don't prove me wrong.
 
 ```sh
-npm install --save KlasaCommunityPlugins/functions
+npm install --save @kcp/functions
 ```
 
 ### Using the plugin
@@ -25,7 +25,7 @@ you need to put
 ```js
 const { Client } = require('klasa');
 
-Client.use(require('klasa-functions'));
+Client.use(require('@kcp/functions'));
 ```
 
 and then you can continue your bot as normal.
