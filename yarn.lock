@@ -292,9 +292,9 @@
   version "0.0.1"
   resolved "https://codeload.github.com/KlasaCommunityPlugins/lint-files/tar.gz/fcee9885af14c0e9fd5ef8c16f55f6abf5d71d98"
 
-"@types/node@^11.11.3":
-  version "11.11.4"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-11.11.4.tgz#8808bd5a82bbf6f5d412eff1c228d178e7c24bb3"
+"@types/node@^11.11.6":
+  version "11.11.6"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-11.11.6.tgz#df929d1bb2eee5afdda598a41930fe50b43eaa6a"
 
 abbrev@1:
   version "1.1.1"
