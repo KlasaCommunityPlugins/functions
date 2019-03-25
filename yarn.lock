@@ -290,7 +290,8 @@
 
 "@kcp/lint@github:KlasaCommunityPlugins/lint-files":
   version "0.0.1"
-  resolved "https://codeload.github.com/KlasaCommunityPlugins/lint-files/tar.gz/fcee9885af14c0e9fd5ef8c16f55f6abf5d71d98"
+  uid "69c87c031b3cae1bbef020fb080e6438837262a6"
+  resolved "https://codeload.github.com/KlasaCommunityPlugins/lint-files/tar.gz/69c87c031b3cae1bbef020fb080e6438837262a6"
 
 "@types/node@^11.11.6":
   version "11.11.6"
