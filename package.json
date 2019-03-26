@@ -18,7 +18,7 @@
     "url": "git+https://github.com/KlasaCommunityPlugins/functions.git"
   },
   "scripts": {
-    "prepare": "tsc",
+    "prepare": "npx tsc",
     "test:lint": "yarn tslint 'src/*.ts' && yarn eslint --config .eslintrcmd.json --ext md guides && yarn markdownlint guides README.md",
     "build": "yarn tsc",
     "docs": "yarn build && yarn dg --source dist --custom guides/.docconfig.json --output dist/docs.json --logging"
