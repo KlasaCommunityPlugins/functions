@@ -53,7 +53,7 @@ this.client.funcs.test();
 
 1. ???... Enjoy!
 
-# Tips
+## Tips
 
 - To allow multiple functions in a file so you can do something like `this.client.funcs.utils.toTitleCase(string)` instead of using 1 file per function remove the `returnMethod`.
 
