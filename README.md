@@ -57,7 +57,6 @@ this.client.funcs.test();
 
 - To allow multiple functions in a file so you can do something like `this.client.funcs.utils.toTitleCase(string)` instead of using 1 file per function remove the `returnMethod`.
 
-
 ## License
 
 This project is under the [MIT](https://github.com/KlasaCommunityPlugins/functions/blob/master/LICENSE) license.
