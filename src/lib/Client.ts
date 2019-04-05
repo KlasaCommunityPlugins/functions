@@ -57,7 +57,8 @@ export class FunctionsClient extends Client {
 		const { options } = typedThis;
 		const { returnMethod } = options.aliasFunctions;
 
-		if (options.aliasFunctions.enabled) {
+		if (options.aliasFunctions.enabled && options.aliasFunctions.prefix) {
+			if (options.aliasFunctions.prefix === 'functions') throw new Error(`[Functions-Plugin] "functions" is not a valid alias prefix option!`);
 			// @ts-ignore
 			typedThis[options.aliasFunctions.prefix] = new Proxy(typedThis.functions, {
 				get(target, prop) {
@@ -78,10 +79,10 @@ export class FunctionsClient extends Client {
 
 declare module 'klasa' {
 	interface KlasaClientOptions {
-		aliasFunctions: {
-			enabled: boolean;
-			returnMethod: string;
-			prefix: string;
+		aliasFunctions?: {
+			enabled?: boolean;
+			returnMethod?: string;
+			prefix?: string;
 		};
 	}
 }
