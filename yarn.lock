@@ -293,9 +293,24 @@
   uid "69c87c031b3cae1bbef020fb080e6438837262a6"
   resolved "https://codeload.github.com/KlasaCommunityPlugins/lint-files/tar.gz/69c87c031b3cae1bbef020fb080e6438837262a6"
 
+"@types/events@*":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@types/events/-/events-3.0.0.tgz#2862f3f58a9a7f7c3e78d79f130dd4d71c25c2a7"
+
+"@types/node@*":
+  version "11.13.0"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-11.13.0.tgz#b0df8d6ef9b5001b2be3a94d909ce3c29a80f9e1"
+
 "@types/node@^11.12.2":
   version "11.12.2"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-11.12.2.tgz#d7f302e74b10e9801d52852137f652d9ee235da8"
+
+"@types/ws@^6.0.1":
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/@types/ws/-/ws-6.0.1.tgz#ca7a3f3756aa12f62a0a62145ed14c6db25d5a28"
+  dependencies:
+    "@types/events" "*"
+    "@types/node" "*"
 
 abbrev@1:
   version "1.1.1"
@@ -1240,8 +1255,8 @@ escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.4, escape-string-regexp@^
 
 "eslint-config-klasa@github:dirigeants/klasa-lint":
   version "0.0.1"
-  uid ee17af192f6e8f8df4cdbc19134c2a9715fab1e0
-  resolved "https://codeload.github.com/dirigeants/klasa-lint/tar.gz/ee17af192f6e8f8df4cdbc19134c2a9715fab1e0"
+  uid "2a808ddc9e94c9dff58e90372d9cedd02cb0ff84"
+  resolved "https://codeload.github.com/dirigeants/klasa-lint/tar.gz/2a808ddc9e94c9dff58e90372d9cedd02cb0ff84"
 
 eslint-plugin-markdown@^1.0.0-beta.6:
   version "1.0.0"
