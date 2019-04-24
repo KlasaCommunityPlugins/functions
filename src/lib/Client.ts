@@ -39,9 +39,8 @@ export class FunctionsClient extends Client {
 		this.constructor[Client.plugin].call(this);
 	}
 
-	static [Client.plugin]() {
-		const typedThis = this as unknown as FunctionsClient;
-		util.mergeDefault(OPTIONS, typedThis.options);
+	static [Client.plugin](this: FunctionsClient) {
+		util.mergeDefault(OPTIONS, this.options);
 
 		const coreDirectory = join(__dirname, '..', '/');
 		/**
@@ -50,17 +49,17 @@ export class FunctionsClient extends Client {
 		 * @type {FunctionStore}
 		 * @name FunctionsClient#functions
 		 */
-		typedThis.functions = new FunctionStore(typedThis, coreDirectory);
+		this.functions = new FunctionStore(this, coreDirectory);
 
-		typedThis.registerStore(typedThis.functions);
+		this.registerStore(this.functions);
 
-		const { options } = typedThis;
+		const { options } = this;
 		const { returnMethod } = options.aliasFunctions;
 
 		if (options.aliasFunctions.enabled && options.aliasFunctions.prefix) {
 			if (options.aliasFunctions.prefix === 'functions') throw new Error(`[Functions-Plugin] "functions" is not a valid alias prefix option!`);
 			// @ts-ignore
-			typedThis[options.aliasFunctions.prefix] = new Proxy(typedThis.functions, {
+			this[options.aliasFunctions.prefix] = new Proxy(this.functions, {
 				get(target, prop) {
 					if (prop === Symbol.iterator) return target[Symbol.iterator].bind(target);
 					return target.has(prop as string)
