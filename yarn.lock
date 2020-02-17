@@ -898,8 +898,8 @@ jsonc-parser@~2.2.0:
 
 "klasa@github:dirigeants/klasa":
   version "0.5.0-dev"
-  uid "4fa20eb767a216ef2e938f1f8d65b33c88d2c913"
-  resolved "https://codeload.github.com/dirigeants/klasa/tar.gz/4fa20eb767a216ef2e938f1f8d65b33c88d2c913"
+  uid ea059931fad07bdea870620181de453efe816646
+  resolved "https://codeload.github.com/dirigeants/klasa/tar.gz/ea059931fad07bdea870620181de453efe816646"
   dependencies:
     fs-nextra "^0.4.7"
 
