@@ -921,9 +921,9 @@ jsonc-parser@~2.2.0:
   resolved "https://registry.yarnpkg.com/jsonc-parser/-/jsonc-parser-2.2.0.tgz#f206f87f9d49d644b7502052c04e82dd6392e9ef"
 
 "klasa@github:dirigeants/klasa":
-  version "0.5.0-dev"
-  uid "48e9eed5227a02119cd6082bf66d076006f86fce"
-  resolved "https://codeload.github.com/dirigeants/klasa/tar.gz/48e9eed5227a02119cd6082bf66d076006f86fce"
+  version "0.5.0"
+  uid "541c9e5f5646db4162f54c7ed61362d479176eed"
+  resolved "https://codeload.github.com/dirigeants/klasa/tar.gz/541c9e5f5646db4162f54c7ed61362d479176eed"
   dependencies:
     fs-nextra "^0.4.7"
 
