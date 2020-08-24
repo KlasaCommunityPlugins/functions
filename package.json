@@ -38,7 +38,7 @@
     "klasa": "github:dirigeants/klasa",
     "markdownlint-cli": "^0.23.0",
     "tslint": "^6.0.0",
-    "typescript": "^3.4.3"
+    "typescript": "^4.0.2"
   },
   "engines": {
     "node": ">=10.1.0"
