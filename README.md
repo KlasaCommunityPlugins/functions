@@ -1,19 +1,8 @@
-<div>
-	<br/>
-	<p>
-	    <a href="https://www.npmjs.com/package/@kcp/functions"><img src="https://img.shields.io/npm/v/@kcp/functions.svg?maxAge=3600" alt="NPM version" /></a>
-		<a href="https://www.npmjs.com/package/@kcp/functions"><img src="https://img.shields.io/npm/dt/@kcp/functions.svg?maxAge=3600" alt="NPM downloads" /></a>
-		<a href="https://packagephobia.now.sh/result?p=@kcp/functions"><img src="https://packagephobia.now.sh/badge?p=@kcp/functions" alt="Install Size"></a>
-        <a href="https://dev.azure.com/klasacommunityplugins/Plugins/_build/latest?definitionId=1&branchName=master"><img src="https://dev.azure.com/klasacommunityplugins/Plugins/_apis/build/status/Functions?branchName=master" alt="Build Status"></a>
-	</p>
-	<p>
-    <a href="https://nodei.co/npm/@kcp/functions"><img src="https://nodei.co/npm/@kcp/functions.png?downloads=true&stars=true" alt="NPM info"></a>
-  </p>
+<div align="center">
+	
+# functions
+Simple Klasa plugin that adds a functions store
 </div>
-
-# Functions
-
-A simple Klasa plugin which adds reloadable functions to your Klasa Bot
 
 ## How To Use
 
