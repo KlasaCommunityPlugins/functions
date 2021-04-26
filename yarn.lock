@@ -450,12 +450,11 @@ escape-string-regexp@^2.0.0:
   uid "28618d5bf851bffdb6775deb5937acfe2a1af25a"
   resolved "https://codeload.github.com/dirigeants/klasa-lint/tar.gz/28618d5bf851bffdb6775deb5937acfe2a1af25a"
 
-eslint-plugin-markdown@^1.0.0-beta.6:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-markdown/-/eslint-plugin-markdown-1.0.2.tgz#79274bf17ce3ead48e4a55cbcb6d7ce735754280"
+eslint-plugin-markdown@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-markdown/-/eslint-plugin-markdown-2.1.0.tgz#1fee34a058e299bd51f3393553bf7f92f3fa167c"
   dependencies:
-    object-assign "^4.0.1"
-    remark-parse "^5.0.0"
+    remark-parse "^7.0.0"
     unified "^6.1.2"
 
 eslint-scope@^5.1.1:
@@ -1065,10 +1064,6 @@ node-fetch@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.3.0.tgz#1a1d940bbfb916a1d3e0219f037e89e71f8c5fa5"
 
-object-assign@^4.0.1:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
-
 object-get@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/object-get/-/object-get-2.1.0.tgz#722bbdb60039efa47cad3c6dc2ce51a85c02c5ae"
@@ -1196,9 +1191,9 @@ regexpp@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/regexpp/-/regexpp-3.1.0.tgz#206d0ad0a5648cffbdb8ae46438f3dc51c9f78e2"
 
-remark-parse@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/remark-parse/-/remark-parse-5.0.0.tgz#4c077f9e499044d1d5c13f80d7a98cf7b9285d95"
+remark-parse@^7.0.0:
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/remark-parse/-/remark-parse-7.0.2.tgz#41e7170d9c1d96c3d32cf1109600a9ed50dba7cf"
   dependencies:
     collapse-white-space "^1.0.2"
     is-alphabetical "^1.0.0"
