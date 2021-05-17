@@ -56,8 +56,8 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-15.3.0.tgz#d6fed7d6bc6854306da3dea1af9f874b00783e26"
 
 "@types/ws@^7.2.0":
-  version "7.2.0"
-  resolved "https://registry.yarnpkg.com/@types/ws/-/ws-7.2.0.tgz#ed94695be01a77efd590244fc17c3b730e75d88a"
+  version "7.4.4"
+  resolved "https://registry.yarnpkg.com/@types/ws/-/ws-7.4.4.tgz#93e1e00824c1de2608c30e6de4303ab3b4c0c9bc"
   dependencies:
     "@types/node" "*"
 
